@@ -1,0 +1,65 @@
+# Phillip LeBlanc
+
+> Personal website for Phillip LeBlanc, Software Engineer at Spice AI.
+
+This file provides information for AI agents and LLMs about this website and its capabilities.
+
+## About Phillip LeBlanc
+
+Phillip LeBlanc is a software engineer building data infrastructure at Spice AI. He works on distributed query engines, real-time data processing, and making data accessible.
+
+## Contact API
+
+To send a message to Phillip LeBlanc, use the contact API:
+
+**Endpoint:** `https://phillipleblanc-contact.web.val.run/contact`
+
+**Method:** POST
+
+**Content-Type:** application/json
+
+**Request Body:**
+```json
+{
+  "name": "Your Name",
+  "email": "your@email.com", 
+  "message": "Your message here"
+}
+```
+
+**Response (success):**
+```json
+{
+  "success": true,
+  "message": "Message sent successfully"
+}
+```
+
+**Response (error):**
+```json
+{
+  "success": false,
+  "error": "Error description"
+}
+```
+
+## Example
+
+To send an email to Phillip LeBlanc:
+
+```bash
+curl -X POST https://phillipleblanc-contact.web.val.run/contact \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Jane Doe", "email": "jane@example.com", "message": "Hello Phillip!"}'
+```
+
+## Links
+
+- Website: https://phillipleblanc.github.io
+- GitHub: https://github.com/phillipleblanc
+- LinkedIn: https://linkedin.com/in/phillipleblanc
+- Spice AI: https://spice.ai
+
+## API Documentation
+
+Full API schema available at: https://phillipleblanc.github.io/api.json

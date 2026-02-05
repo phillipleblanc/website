@@ -1,0 +1,126 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Phillip LeBlanc Contact API",
+    "description": "API to send messages to Phillip LeBlanc",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Phillip LeBlanc",
+      "url": "https://phillipleblanc.github.io"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://phillipleblanc-contact.web.val.run",
+      "description": "Production API"
+    }
+  ],
+  "paths": {
+    "/contact": {
+      "post": {
+        "operationId": "sendMessage",
+        "summary": "Send a message to Phillip LeBlanc",
+        "description": "Sends an email message to Phillip LeBlanc. Use this to contact him about work opportunities, collaborations, or general inquiries.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactRequest"
+              },
+              "example": {
+                "name": "Jane Doe",
+                "email": "jane@example.com",
+                "message": "Hello Phillip! I'd like to discuss a potential collaboration."
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Message sent successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ContactRequest": {
+        "type": "object",
+        "required": ["name", "email", "message"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the person sending the message",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email address for replies"
+          },
+          "message": {
+            "type": "string",
+            "description": "The message content",
+            "minLength": 1,
+            "maxLength": 5000
+          }
+        }
+      },
+      "SuccessResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "const": true
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "const": false
+          },
+          "error": {
+            "type": "string",
+            "description": "Error message describing what went wrong"
+          }
+        }
+      }
+    }
+  }
+}

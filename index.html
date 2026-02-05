@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phillip LeBlanc</title>
+    <meta name="description" content="Phillip LeBlanc - Software Engineer. Building data infrastructure at Spice AI.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Phillip LeBlanc</h1>
+            <p class="tagline">Software Engineer</p>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I'm a software engineer building data infrastructure at <a href="https://spice.ai">Spice AI</a>.
+                I work on distributed query engines, real-time data processing, and making data accessible.
+            </p>
+            <p>
+                Previously, I've worked on various systems involving Rust, databases, and cloud infrastructure.
+            </p>
+        </section>
+
+        <section id="work">
+            <h2>Work</h2>
+            <ul>
+                <li>
+                    <strong><a href="https://spice.ai">Spice AI</a></strong> — Building a unified data platform 
+                    with federated SQL queries across any data source.
+                </li>
+                <li>
+                    <strong><a href="https://github.com/spiceai/spiceai">spiceai/spiceai</a></strong> — 
+                    Open source contributor to the Spice runtime.
+                </li>
+            </ul>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://github.com/phillipleblanc">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/phillipleblanc">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Want to get in touch? Use the form below or have your AI agent send a message via the 
+                <a href="/llms.txt">API</a>.
+            </p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="form-status"></div>
+        </section>
+
+        <footer>
+            <p>
+                <a href="/llms.txt">llms.txt</a> · 
+                <a href="/api.json">API Schema</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
