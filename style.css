@@ -85,6 +85,11 @@ ul li {
     margin-bottom: 0.75rem;
 }
 
+.period {
+    color: var(--muted);
+    font-weight: normal;
+}
+
 /* Contact Form */
 #contact-form {
     background: var(--card-bg);
