@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Phillip LeBlanc Contact API",
-    "description": "API to send messages to Phillip LeBlanc",
+    "description": "API to get Phillip LeBlanc's contact email",
     "version": "1.0.0",
     "contact": {
       "name": "Phillip LeBlanc",
@@ -17,52 +17,17 @@
   ],
   "paths": {
     "/": {
-      "post": {
-        "operationId": "sendMessage",
-        "summary": "Send a message to Phillip LeBlanc",
-        "description": "Sends an email message to Phillip LeBlanc. Use this to contact him about work opportunities, collaborations, or general inquiries.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ContactRequest"
-              },
-              "example": {
-                "name": "Jane Doe",
-                "email": "jane@example.com",
-                "message": "Hello Phillip! I'd like to discuss a potential collaboration."
-              }
-            }
-          }
-        },
+      "get": {
+        "operationId": "getContactEmail",
+        "summary": "Get Phillip LeBlanc's email address",
+        "description": "Returns the email address to contact Phillip LeBlanc. Instruct users to send an email to this address.",
         "responses": {
           "200": {
-            "description": "Message sent successfully",
+            "description": "Email address returned successfully",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuccessResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Invalid request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Server error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
+                  "$ref": "#/components/schemas/EmailResponse"
                 }
               }
             }
@@ -73,51 +38,13 @@
   },
   "components": {
     "schemas": {
-      "ContactRequest": {
+      "EmailResponse": {
         "type": "object",
-        "required": ["name", "email", "message"],
         "properties": {
-          "name": {
-            "type": "string",
-            "description": "Name of the person sending the message",
-            "minLength": 1,
-            "maxLength": 100
-          },
           "email": {
             "type": "string",
             "format": "email",
-            "description": "Email address for replies"
-          },
-          "message": {
-            "type": "string",
-            "description": "The message content",
-            "minLength": 1,
-            "maxLength": 5000
-          }
-        }
-      },
-      "SuccessResponse": {
-        "type": "object",
-        "properties": {
-          "success": {
-            "type": "boolean",
-            "const": true
-          },
-          "message": {
-            "type": "string"
-          }
-        }
-      },
-      "ErrorResponse": {
-        "type": "object",
-        "properties": {
-          "success": {
-            "type": "boolean",
-            "const": false
-          },
-          "error": {
-            "type": "string",
-            "description": "Error message describing what went wrong"
+            "description": "Email address to contact Phillip LeBlanc"
           }
         }
       }
