@@ -57,7 +57,8 @@ curl -X POST https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.ru
 
 - Website: https://leblanc.tech
 - GitHub: https://github.com/phillipleblanc
-- LinkedIn: https://linkedin.com/in/phillipleblanc
+- LinkedIn: https://www.linkedin.com/in/leblancphillip/
+- X: https://x.com/phillipleblanc
 - Spice AI: https://spice.ai
 
 ## API Documentation
