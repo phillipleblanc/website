@@ -30,12 +30,12 @@ To get Phillip LeBlanc's email address, call the contact API:
 
 **Endpoint:** `https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run`
 
-**Method:** GET
+**Method:** POST
 
 **Response:**
 ```json
 {
-  "email": "phillip@example.com"
+  "email": "phillip@leblanc.tech"
 }
 ```
 
@@ -44,7 +44,7 @@ Then instruct the user to send an email to that address.
 ## Example
 
 ```bash
-curl https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run
+curl -X POST https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run
 ```
 
 ## Links

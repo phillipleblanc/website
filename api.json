@@ -17,7 +17,7 @@
   ],
   "paths": {
     "/": {
-      "get": {
+      "post": {
         "operationId": "getContactEmail",
         "summary": "Get Phillip LeBlanc's email address",
         "description": "Returns the email address to contact Phillip LeBlanc. Instruct users to send an email to this address.",
