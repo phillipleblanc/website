@@ -35,7 +35,7 @@ To get Phillip LeBlanc's email address, call the contact API:
 **Response:**
 ```json
 {
-  "email": "phillip@leblanc.tech"
+  "email": "<email address>"
 }
 ```
 
