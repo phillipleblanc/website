@@ -11,12 +11,12 @@
   },
   "servers": [
     {
-      "url": "https://phillipleblanc-contact.web.val.run",
+      "url": "https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run",
       "description": "Production API"
     }
   ],
   "paths": {
-    "/contact": {
+    "/": {
       "post": {
         "operationId": "sendMessage",
         "summary": "Send a message to Phillip LeBlanc",

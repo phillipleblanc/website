@@ -1,4 +1,4 @@
-const CONTACT_API = 'https://phillipleblanc-contact.web.val.run/contact';
+const CONTACT_API = 'https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run';
 
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();

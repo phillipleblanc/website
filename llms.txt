@@ -12,7 +12,7 @@ Phillip LeBlanc is a software engineer building data infrastructure at Spice AI.
 
 To send a message to Phillip LeBlanc, use the contact API:
 
-**Endpoint:** `https://phillipleblanc-contact.web.val.run/contact`
+**Endpoint:** `https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run`
 
 **Method:** POST
 
@@ -48,7 +48,7 @@ To send a message to Phillip LeBlanc, use the contact API:
 To send an email to Phillip LeBlanc:
 
 ```bash
-curl -X POST https://phillipleblanc-contact.web.val.run/contact \
+curl -X POST https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run \
   -H "Content-Type: application/json" \
   -d '{"name": "Jane Doe", "email": "jane@example.com", "message": "Hello Phillip!"}'
 ```
