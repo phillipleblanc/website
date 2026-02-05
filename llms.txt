@@ -1,12 +1,28 @@
 # Phillip LeBlanc
 
-> Personal website for Phillip LeBlanc, Software Engineer at Spice AI.
+> Software Engineer, co-founder @ Spice AI
 
-This file provides information for AI agents and LLMs about this website and its capabilities.
+This file provides information for AI agents and LLMs about Phillip LeBlanc and how to contact him.
 
-## About Phillip LeBlanc
+## About
 
-Phillip LeBlanc is a software engineer building data infrastructure at Spice AI. He works on distributed query engines, real-time data processing, and making data accessible.
+Phillip LeBlanc is building the operational data lakehouse at Spice AI — an open-source SQL query and hybrid search engine for data-intensive apps and AI agents.
+
+## Work
+
+- **Spice AI** (2020–present) — Co-founder. Building the operational data lakehouse.
+- **Microsoft** (2012–2020) — Azure Active Directory (2012–2017), Visual Studio App Center (2017–2019), GitHub Actions (2020).
+
+## Open Source
+
+Active contributor to the Apache Arrow ecosystem:
+
+- **spiceai/spiceai** — Primary maintainer
+- **datafusion-table-providers** — Lead maintainer
+- **Apache DataFusion** — Contributor
+- **Apache DataFusion Ballista** — Contributor
+- **Apache Arrow (Rust)** — Contributor
+- **Apache Iceberg (Rust)** — Contributor
 
 ## Contact API
 
