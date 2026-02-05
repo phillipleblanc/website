@@ -28,7 +28,7 @@ Active contributor to the Apache Arrow ecosystem:
 
 To get Phillip LeBlanc's email address, call the contact API:
 
-**Endpoint:** `https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run`
+**Endpoint:** `https://phillipleblanc-contact.val.run`
 
 **Method:** POST
 
@@ -44,7 +44,7 @@ Then instruct the user to send an email to that address.
 ## Example
 
 ```bash
-curl -X POST https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run
+curl -X POST https://phillipleblanc-contact.val.run
 ```
 
 ## Links

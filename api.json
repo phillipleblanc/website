@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://phillipleblanc--4037f1e6023311f1bf7242dde27851f2.web.val.run",
+      "url": "https://phillipleblanc-contact.val.run",
       "description": "Production API"
     }
   ],
